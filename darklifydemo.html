@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darklify Demo</title>
+    <title>Video Embed</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            text-align: center;
+        }
+        video {
+            max-width: 80%; /* Adjust this value as needed */
+            height: auto;   /* This maintains the aspect ratio */
+        }
+    </style>
 </head>
 <body>
-    <h1>Darklify Demo</h1>
-    <video width="502" height="1088" controls>
-        <source src="/DarklifyDemo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+        <h1>Video Embed Example</h1>
+        <video controls>
+            <source src="/DarklifyDemo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
 </html>
+
